@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="primeiro" class="estilo1" name="um"> abc </p>
+    <p id="segundo" class="estilo2" name="dois"> def </p>
+    <p id="terceiro" class="estilo1" name="tres"> ghi </p>
+    <p id="quarto" class="estilo2" name="quatro"> sdfsd </p>
+
+    • O elemento cujo id é “segundo”;
+    • Todos os elementos que usam a classe “estilo1”;
+    • Os elementos cujo atributo name seja “tres;
+    • Todos os elementos que são da tag p.
+    <button onclick="funcao1()"> byID </button>
+    <button onclick="funcao2()"> byClassName </button>
+    <button onclick="funcao3()"> byName </button>
+    <button onclick="funcao4()"> byTagName </button>
+    <script>
+        
+        function funcao1(){
+          let elemento = document.getElementById("segundo");
+          console.log(elemento);
+        }
+        function funcao2(){
+            let elementos = document.getElementsByClassName("estilo1");
+            console.log(elementos[0]);
+            console.log(elementos[1]);
+        }
+        function funcao3(){
+            let elementos = document.getElementsByName("tres");
+            console.log(elementos[0]);
+        }
+        function funcao4() {
+            let elementos = document.getElementsByTagName("p");
+            console.log(elementos[0]);
+            console.log(elementos[1]);
+            console.log(elementos[2]);
+            console.log(elementos[3]);
+        }
+
+    </script>
+</body>
+</html>

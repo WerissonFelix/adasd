@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="primeiro" class="estilo1" name="um"> abc </p>
+    <p id="segundo" class="estilo2" name="dois"> def </p>
+    <p id="terceiro" class="estilo1" name="tres"> ghi </p>
+    <p id="quarto" class="estilo2" name="quatro"> sdfsd </p>
+
+    • Todos os elementos que utilizem a classe “Teste”;
+    • O elemento cujo id é “primeiro”.  
+    <button onclick="funcao1()"> class </button>
+    <button onclick="funcao2()"> primeiro </button>
+    <script>
+        function funcao1(){
+            let elementos = document.querySelectorAll(".estilo1");
+
+            elementos.forEach((elemento) => {
+                console.log(elemento);
+            });
+        }
+        function funcao2(){
+            let elemento = document.querySelector("#primeiro");
+            console.log(elemento);
+        }
+        
+
+    </script>
+</body>
+</html>
